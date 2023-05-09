@@ -1,4 +1,5 @@
 import "./App.css";
+import { Footer } from "./components/footer/footer.components";
 import { NavBar } from "./components/navigation/nav.component";
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
         adipisci unde vel expedita laudantium a rem perferendis, vitae deleniti
         illum possimus?
       </p>
+      <Footer />
     </div>
   );
 }
