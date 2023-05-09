@@ -1,0 +1,20 @@
+.about-container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  padding: 20px;
+  position: relative;
+  left: 30%;
+  top: 20px;
+  align-items: center;
+  width: 60%;
+  height: 300px;
+  gap: 90px;
+}
+.about-container p {
+  overflow-wrap: break-word;
+}
+.about-img {
+  width: 200px;
+  height: 200px;
+}

@@ -1,0 +1,19 @@
+.divider-container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  margin: 30px 0 0 30px;
+  color: #333;
+  gap: 10rem;
+}
+.divider-container span {
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+hr {
+  width: 80%;
+  height: 1px;
+  border: none;
+  background-color: #333;
+}

@@ -1,0 +1,37 @@
+.header {
+  background-image: linear-gradient(
+    to right bottom,
+    #0075ff,
+    #0093ff,
+    #00abfe,
+    #00beee,
+    #00cedd,
+    #1bd4db,
+    #2edad8,
+    #40e0d5,
+    #3cdfe1,
+    #42deec,
+    #4fdcf4,
+    #5fdafb
+  );
+
+  width: 96vw;
+  height: 320px;
+  display: flex;
+  position: relative;
+  left: 2%;
+  justify-content: space-between;
+  align-items: center;
+  z-index: -1;
+}
+.header-text {
+  color: #fff;
+  font-size: 30px;
+  line-height: 50px;
+  padding-left: 45px;
+}
+.header-img {
+  width: 250px;
+  height: 320px;
+  margin: 60px 80px 0 0;
+}

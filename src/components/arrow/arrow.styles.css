@@ -1,0 +1,12 @@
+.arrow-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  left: 50%;
+  margin-top: 20px;
+}
+.fa-solid {
+  color: #333;
+  font-size: 46px;
+}

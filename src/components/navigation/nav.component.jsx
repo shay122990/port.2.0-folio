@@ -12,6 +12,7 @@ export const NavBar = () => {
       href: "https://github.com/shay122990",
       icon: "fa-brands fa-github",
       target: "_blank",
+      rel: "noreferrer",
     },
     { text: "Home", href: "#home", logo: true },
     { text: "About", href: "#about" },
@@ -20,7 +21,7 @@ export const NavBar = () => {
   return (
     <nav className='nav'>
       {links.map((link, index) => (
-        <a href={link.href} key={index} target={link.target}>
+        <a href={link.href} key={index} target={link.target} rel={link.rel}>
           {link.icon ? <i className={link.icon}></i> : null}
           {link.logo ? <img src={logo} alt='Logo' /> : link.text}
         </a>

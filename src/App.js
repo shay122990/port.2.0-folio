@@ -1,18 +1,29 @@
 import "./App.css";
+import { About } from "./components/about/about.component";
+import { Arrow } from "./components/arrow/arrow.component";
+import { Contact } from "./components/contact/contact.component";
+import Divider from "./components/divider/divider.component";
 import { Footer } from "./components/footer/footer.components";
+import { Header } from "./components/header/header.component";
 import { NavBar } from "./components/navigation/nav.component";
+import { Projects } from "./components/projects/projects.components";
+import { Services } from "./components/services&tech/services&tech.component";
 
 function App() {
   return (
     <div className='App'>
       <NavBar />
-      <h1>hello world</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere commodi
-        dolorem recusandae deserunt aliquid rerum nihil aspernatur nesciunt
-        adipisci unde vel expedita laudantium a rem perferendis, vitae deleniti
-        illum possimus?
-      </p>
+      <Header />
+      <Arrow />
+      <Divider text='About Me' id='about' />
+      <About />
+      <Divider text='Projects' id='projects' />
+      <Projects />
+      <Arrow />
+      <Divider text='Services & Tech' id='services' />
+      <Services />
+      <Divider text='Get in touch' id='contact' />
+      <Contact />
       <Footer />
     </div>
   );
