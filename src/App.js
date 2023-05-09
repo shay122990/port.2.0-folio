@@ -1,8 +1,10 @@
 import "./App.css";
+import { NavBar } from "./components/navigation/nav.component";
 
 function App() {
   return (
     <div className='App'>
+      <NavBar />
       <h1>hello world</h1>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere commodi
