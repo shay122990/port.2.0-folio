@@ -12,7 +12,7 @@ export const NavBar = () => {
     {
       text: "",
       href: "https://github.com/shay122990",
-      icon: "fa-brands fa-github",
+      icon: "fa-brands fa-github nav-icon",
       target: "_blank",
       rel: "noreferrer",
     },

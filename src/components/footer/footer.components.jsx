@@ -10,14 +10,14 @@ export const Footer = () => {
           target='_blank'
           rel='noreferrer'
         >
-          <i class='fa-brands fa-github'></i>
+          <i class='fa-brands fa-github footer-icon'></i>
         </a>
         <a
           href='https://www.linkedin.com/in/shay-asanova90/'
           target='_blank'
           rel='noreferrer'
         >
-          <i class='fa-brands fa-linkedin'></i>
+          <i class='fa-brands fa-linkedin footer-icon'></i>
         </a>
       </span>
       <p> © Shay Development 2023</p>
