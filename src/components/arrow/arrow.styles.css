@@ -7,6 +7,6 @@
   margin-top: 20px;
 }
 .fa-solid {
-  color: #333;
+  color: var(--hover-color);
   font-size: 46px;
 }

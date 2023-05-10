@@ -2,19 +2,22 @@
   display: flex;
   justify-content: space-between;
   flex-direction: row;
-  padding: 20px;
+  margin: 0;
   position: relative;
-  left: 30%;
+  left: 20%;
   top: 20px;
   align-items: center;
-  width: 60%;
+  width: 70%;
   height: 300px;
-  gap: 90px;
+  overflow: hidden;
+  gap: 10rem;
+}
+
+.about-img {
+  width: 240px;
+  height: 240px;
 }
 .about-container p {
-  overflow-wrap: break-word;
-}
-.about-img {
-  width: 200px;
-  height: 200px;
+  padding: 0;
+  color: var(--text-color);
 }

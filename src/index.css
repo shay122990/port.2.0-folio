@@ -1,18 +1,33 @@
 * {
   box-sizing: border-box;
 }
+:root {
+  --background-color: #fefafa; /* Light mode background color */
+  --text-color: #333; /* Light mode text color */
+  --hr-color: #333; /* Light mode hr color */
+  --hover-color: #4fe0c3;
+}
+
+.dark-mode {
+  --background-color: #333; /* Dark mode background color */
+  --text-color: #fff; /* Dark mode text color */
+  --hr-color: #fff; /* Dark mode hr color */
+}
+
 body {
-  overflow-y: scroll;
-  background-color: aliceblue;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  max-width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
   margin: 0;
-  font-family: "Coda", cursive, sans-serif;
+  padding: 0;
+  font-family: "Coda", sans-serif;
   font-weight: 400;
-  color: #333;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
-} */
+hr {
+  border-color: var(--hr-color);
+}

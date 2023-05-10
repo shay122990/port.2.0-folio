@@ -8,12 +8,12 @@
 }
 .nav a {
   font-size: 18px;
-  color: #333;
+  color: var(--text-color);
   text-decoration: none;
   margin: 0 1rem;
 }
 nav a:hover {
-  color: #4fe0c3;
+  color: var(--hover-color);
 }
 img {
   width: 80px;
@@ -21,4 +21,14 @@ img {
 }
 i {
   font-size: 22px;
+  color: var(--text-color);
 }
+i:hover {
+  color: var(--hover-color);
+}
+/* .nav.dark {
+  background-color: #333;
+}
+.anchor.dark {
+  color: #fff;
+} */
