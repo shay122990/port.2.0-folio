@@ -1,0 +1,30 @@
+.project-card {
+  margin-bottom: 40px;
+  border-top: 1rem solid #fff;
+  border-left: 1rem solid #fff;
+  border-right: 1rem solid #fff;
+  background-color: #fff;
+  box-shadow: 0 0 12px rgba(138, 238, 181, 0.3);
+}
+.product-img {
+  margin: 0;
+  width: 280px;
+  height: 310px;
+  object-fit: fill;
+  border: solid 0.8px black;
+}
+.links {
+  margin: 28px auto;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-around;
+}
+
+.links a {
+  font-style: italic;
+  color: black;
+  text-decoration: none;
+}
+.links a:hover {
+  color: var(--hover-color);
+}

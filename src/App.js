@@ -6,7 +6,7 @@ import Divider from "./components/divider/divider.component";
 import { Footer } from "./components/footer/footer.components";
 import { Header } from "./components/header/header.component";
 import { NavBar } from "./components/navigation/nav.component";
-import { Projects } from "./components/projects/projects.components";
+import { Projects } from "./components/projects/projects.component";
 import { Services } from "./components/services&tech/services&tech.component";
 import ThemeContextProvider from "./ThemeContext";
 

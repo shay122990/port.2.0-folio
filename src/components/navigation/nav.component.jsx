@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import "./nav.styles.css";
-import logo from "../../media/logo.png";
+import logo from "../../media/logo.gif";
 import { DarkModeToogle } from "../dark-mode-toggle/dark-mode-toggle";
 import { ThemeContext } from "../../ThemeContext";
 

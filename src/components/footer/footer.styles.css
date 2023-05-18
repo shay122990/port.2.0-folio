@@ -14,6 +14,9 @@ span a {
   padding: 0 28px 0 0;
   text-decoration: none;
 }
+.footer-text {
+  color: #fff;
+}
 .footer-icon {
   font-size: 24px;
   color: #fff;

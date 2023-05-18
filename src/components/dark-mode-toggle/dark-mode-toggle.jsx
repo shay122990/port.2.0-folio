@@ -14,9 +14,9 @@ export const DarkModeToogle = () => {
         onChange={toggleDarkMode}
         checked={darkMode}
       />
-      <label className='dark_mode_label' for='darkmode-toggle'>
-        <i class='fa-solid fa-sun'></i>
-        <i class='fa-solid fa-moon'></i>
+      <label className='dark_mode_label' htmlFor='darkmode-toggle'>
+        <i className='fa-solid fa-sun'></i>
+        <i className='fa-solid fa-moon'></i>
       </label>
     </div>
   );

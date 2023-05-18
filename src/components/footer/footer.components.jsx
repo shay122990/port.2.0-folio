@@ -10,18 +10,18 @@ export const Footer = () => {
           target='_blank'
           rel='noreferrer'
         >
-          <i class='fa-brands fa-github footer-icon'></i>
+          <i className='fa-brands fa-github footer-icon'></i>
         </a>
         <a
           href='https://www.linkedin.com/in/shay-asanova90/'
           target='_blank'
           rel='noreferrer'
         >
-          <i class='fa-brands fa-linkedin footer-icon'></i>
+          <i className='fa-brands fa-linkedin footer-icon'></i>
         </a>
       </span>
-      <p> © Shay Development 2023</p>
-      <p>Dubai, UAE</p>
+      <p className='footer-text'> © Shay Development 2023</p>
+      <p className='footer-text'>Dubai, UAE</p>
     </div>
   );
 };
