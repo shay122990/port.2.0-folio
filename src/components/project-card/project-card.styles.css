@@ -1,23 +1,27 @@
 .project-card {
   margin-bottom: 40px;
-  border-top: 1rem solid #fff;
-  border-left: 1rem solid #fff;
-  border-right: 1rem solid #fff;
+  border: 1rem solid #fff;
+  border-bottom: 1px solid #fff;
   background-color: #fff;
-  box-shadow: 0 0 12px rgba(138, 238, 181, 0.3);
+  box-shadow: 0 0 12px rgba(144, 59, 59, 0.3);
 }
-.product-img {
+.project-img {
+  position: relative;
   margin: 0;
   width: 280px;
   height: 310px;
   object-fit: fill;
-  border: solid 0.8px black;
+  border: solid 0.8px rgba(0, 0, 0, 0.448);
+  overflow: hidden;
 }
+
 .links {
-  margin: 28px auto;
-  background-color: #fff;
+  height: 50px;
+  margin: 20px auto;
+  background-color: #f8e7ea;
   display: flex;
   justify-content: space-around;
+  align-items: center;
 }
 
 .links a {

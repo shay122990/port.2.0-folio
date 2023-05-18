@@ -1,17 +1,15 @@
 .about-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-direction: row;
-  margin: 4rem 0 8rem 0;
+  margin: 6rem 0 10rem 0;
   position: relative;
   top: 20px;
-  left: 16%;
+  left: 15%;
   align-items: center;
   width: 80%;
   height: auto;
-  /* overflow: hidden; */
-  gap: 40px;
-  border: solid 1px red;
+  gap: 90px;
 }
 
 .about-img {
@@ -20,6 +18,9 @@
 }
 
 .about-info {
+  width: 500px;
+}
+.about-info p {
   flex-basis: 100%;
   word-wrap: break-word;
   color: var(--text-color);

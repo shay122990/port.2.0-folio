@@ -1,7 +1,7 @@
 import React from "react";
 import "./projects.styles.css";
 import ProjectCard from "../project-card/project-card.component";
-import image1 from "../../media/project1.png";
+import image1 from "../../media/project4.png";
 
 const projects = [
   {
