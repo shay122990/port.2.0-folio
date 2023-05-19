@@ -8,7 +8,7 @@ const projects = [
     id: 1,
     description:
       "An e-commerce website, built with ReactJs, Firebase Api for data storage and Redux for state update",
-    liveUrl: "https://tubular-travesseiro-4fffff.netlify.app/",
+    liveUrl: "https://master--vermillion-stardust-52b853.netlify.app/checkout",
     githubUrl: "https://github.com/shay122990/crwn-clothings-v2-reduxtoolkit",
     imageUrl: image1,
   },

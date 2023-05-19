@@ -1,8 +1,8 @@
 .project-card {
   margin-bottom: 40px;
-  border: 1rem solid #fff;
-  border-bottom: 1px solid #fff;
-  background-color: #fff;
+  border: 1rem solid #f3e8d9;
+  border-bottom: 1px solid #f3e8d9;
+  background-color: #f3e8d9;
   box-shadow: 0 0 12px rgba(144, 59, 59, 0.3);
 }
 .project-img {
@@ -18,7 +18,7 @@
 .links {
   height: 50px;
   margin: 20px auto;
-  background-color: #f8e7ea;
+  background-color: #fff;
   display: flex;
   justify-content: space-around;
   align-items: center;
