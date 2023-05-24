@@ -22,5 +22,5 @@ span a {
   color: #fff;
 }
 .footer-icon:hover {
-  color: #430342;
+  color: var(--hover-color);
 }

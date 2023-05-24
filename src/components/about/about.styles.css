@@ -5,25 +5,26 @@
   margin: 6rem 0 10rem 0;
   position: relative;
   top: 20px;
-  left: 15%;
+  left: 10%;
   align-items: center;
   width: 80%;
   height: auto;
-  gap: 90px;
+  gap: 140px;
 }
 
 .about-img {
-  width: 360px;
-  height: 270px;
+  width: 460px;
+  height: 370px;
 }
 
 .about-info {
-  width: 500px;
+  width: 800px;
 }
 .about-info p {
   flex-basis: 100%;
   word-wrap: break-word;
   color: var(--text-color);
+  line-height: 1.8rem;
 }
 
 @media (max-width: 768px) {

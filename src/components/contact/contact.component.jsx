@@ -40,12 +40,21 @@ export const Contact = () => {
           }, 6000);
         },
         (error) => {
-          setError("Error occurred. Please try again later.");
+          setError(
+            <>
+              Oops, an error occurred while sending the message. <br />
+              Please contact me via LinkedIn{" "}
+              <a
+                href='https://www.linkedin.com/in/shay-asanova90/'
+                target='_blank'
+                rel='noreferrer'
+              >
+                <i className='fa-brands fa-linkedin error-icon'></i>
+              </a>
+            </>
+          );
           setMessage("");
           form.current.reset();
-          setTimeout(() => {
-            setError("");
-          }, 6000);
         }
       );
   };
@@ -55,12 +64,17 @@ export const Contact = () => {
       <div className='contact-info'>
         <h2>Get in Touch</h2>
         <p>
-          If you have any questions or inquiries, please feel free to reach out
-          to us using the form below. Lorem ipsum dolor sit amet consectetur
-          adipisicing elit. Eveniet pariatur, dolorum consectetur ipsa impedit
-          harum cum assumenda odit voluptate commodi, quia non temporibus
-          maiores ducimus nesciunt asperiores perferendis perspiciatis
-          quibusdam.
+          Lets get coffee... I'm sure theres a new one that just opened as you
+          read this. (Dubai eh?). <br />
+          Thank you for your interest! I would love to connect and discuss how I
+          can contribute to your project or organization. <br />
+          If you are a client, let's start by understanding your requirements
+          and goals. Please fill out the form, and I will get back to you
+          promptly. <br /> And if you're a recruiter, I appreciate your interest
+          in my profile. You can download my resume by clicking the button
+          below.
+          <br />
+          Thank you for considering me. Have a fantastic day!
         </p>
         <a href={resumePDF} download='resume.pdf'>
           <button className='resume-button'>Download Resume</button>

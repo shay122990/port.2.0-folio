@@ -2,7 +2,7 @@
   box-sizing: border-box;
 }
 :root {
-  --background-color: #fefafa; /* Light mode background color */
+  --background-color: #f6f1e9; /* Light mode background color */
   --text-color: #333; /* Light mode text color */
   --hr-color: #333; /* Light mode hr color */
   --hover-color: #4fe0c3;
