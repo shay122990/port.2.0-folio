@@ -30,3 +30,6 @@ body {
 hr {
   border-color: var(--hr-color);
 }
+p {
+  letter-spacing: 1px;
+}

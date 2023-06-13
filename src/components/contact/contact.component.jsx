@@ -32,17 +32,19 @@ export const Contact = () => {
       )
       .then(
         (result) => {
-          setMessage("Message sent successfully!");
+          setMessage(
+            "Thank you, message sent successfully! I will get back to you shortly."
+          );
           setError("");
           form.current.reset();
           setTimeout(() => {
             setMessage("");
-          }, 6000);
+          }, 10000);
         },
         (error) => {
           setError(
             <>
-              Oops, an error occurred while sending the message. <br />
+              Oops, an error occurred whilst sending the message. <br />
               Please contact me via LinkedIn{" "}
               <a
                 href='https://www.linkedin.com/in/shay-asanova90/'
@@ -64,17 +66,15 @@ export const Contact = () => {
       <div className='contact-info'>
         <h2>Get in Touch</h2>
         <p>
-          Lets get coffee... I'm sure theres a new one that just opened as you
-          read this. (Dubai eh?). <br />
-          Thank you for your interest! I would love to connect and discuss how I
-          can contribute to your project or organization. <br />
-          If you are a client, let's start by understanding your requirements
+          Lets get coffee... 😃 <br />
+          I would love to connect and discuss how I can contribute to your
+          project or organization. <br />
+          If you are a client, let's start by understanding your requirements,
           and goals. Please fill out the form, and I will get back to you
           promptly. <br /> And if you're a recruiter, I appreciate your interest
-          in my profile. You can download my resume by clicking the button
-          below.
+          in my profile. You can download my resume below.
           <br />
-          Thank you for considering me. Have a fantastic day!
+          Looking forward to hearing from you. Have a fantastic day!
         </p>
         <a href={resumePDF} download='resume.pdf'>
           <button className='resume-button'>Download Resume</button>

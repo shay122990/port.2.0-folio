@@ -49,11 +49,13 @@
 .success-message {
   color: #4caf50;
   margin-bottom: 10px;
+  font-weight: 300;
 }
 
 .error-message {
   color: #f16e04;
   margin-bottom: 10px;
+  font-weight: bold;
 }
 
 form {
