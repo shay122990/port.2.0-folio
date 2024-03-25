@@ -6,31 +6,6 @@
   height: auto;
 }
 
-.menu-container {
-  position: relative;
-  top: 0;
-  left: 5%;
-  width: 70%;
-  height: 60px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 0 1rem;
-  background-color: var(--hover-color);
-  margin-bottom: 30px;
-}
-
-.menu-container button {
-  margin-right: 1rem;
-  border: none;
-  color: #f3f1f1;
-  background-color: transparent;
-  font-size: 24px;
-}
-
-.menu-container button:hover {
-  color: #343333;
-}
 .tech-and-blob-container {
   display: flex;
   justify-content: space-between;
@@ -56,10 +31,7 @@
 }
 /* Media query for smaller screens */
 @media screen and (max-width: 1300px) {
-  .menu-container {
-    width: 60%;
-  }
-
+  
   .tech-blob-container {
     display: flex;
     width: 100%;
@@ -76,10 +48,6 @@
   }
 }
 @media screen and (max-width: 1000px) {
-  .menu-container {
-    width: 60%;
-  }
-
   .tech-blob-container {
     display: flex;
     width: 100%;
