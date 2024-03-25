@@ -31,7 +31,6 @@
 }
 /* Media query for smaller screens */
 @media screen and (max-width: 1300px) {
-  
   .tech-blob-container {
     display: flex;
     width: 100%;
