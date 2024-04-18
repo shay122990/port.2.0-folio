@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import "./nav.styles.css";
 import logo from "../../media/logo.gif";
-import { DarkModeToogle } from "../dark-mode-toggle/dark-mode-toggle";
+import { DarkModeToggle } from "../dark-mode-toggle/dark-mode-toggle";
 import { ThemeContext } from "../../ThemeContext";
 
 export const NavBar = () => {
@@ -31,10 +31,10 @@ export const NavBar = () => {
           className={`anchor ${darkMode ? "dark" : ""}`}
         >
           {link.icon ? <i className={link.icon}></i> : null}
-          {link.logo ? <img src={logo} alt='Logo' /> : link.text}
+          {link.logo ? <img src={logo} alt="Logo" /> : link.text}
         </a>
       ))}
-      <DarkModeToogle />
+      <DarkModeToggle />
     </nav>
   );
 };

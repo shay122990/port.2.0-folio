@@ -34,7 +34,6 @@ function App() {
             <About />
             <Divider text="Projects" id="projects" />
             <Projects />
-
             <Divider text="Services & Tech" id="services" />
             <Services />
             <Divider text="Get in touch" id="contact" />

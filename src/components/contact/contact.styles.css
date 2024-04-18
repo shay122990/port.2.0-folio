@@ -2,7 +2,6 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-
   gap: 50px;
   padding: 70px 30px 70px 0;
 }
