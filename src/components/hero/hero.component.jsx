@@ -1,8 +1,8 @@
 import React from "react";
-import "./header.styles.css";
+import "./hero.styles.css";
 import image from "../../media/header.png";
 
-export const Header = () => {
+export const Hero = () => {
   return (
     <div className='header'>
       <p className='header-text'>

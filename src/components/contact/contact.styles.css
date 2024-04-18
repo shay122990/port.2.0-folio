@@ -25,6 +25,8 @@
   color: var(--text-color);
 }
 .resume-button {
+  display: flex;
+  justify-content: center;
   margin-top: 10px;
   padding: 12px;
   background-color: var(--hover-color);
@@ -34,7 +36,7 @@
   border-radius: 4px;
   cursor: pointer;
   font-weight: bold;
-  width: 100%;
+  width: 40%;
   transition: background-color 0.3s;
 }
 
@@ -106,6 +108,10 @@ textarea {
 
 .submit-button:hover,
 .resume-button:hover {
+  background: linear-gradient(170deg, #2a0aff, #f49595);
+}
+.submit-button:focus,
+.resume-button:focus{
   background: linear-gradient(170deg, #2a0aff, #f49595);
 }
 .error-icon {

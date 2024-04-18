@@ -5,7 +5,7 @@ import { Arrow } from "./components/arrow/arrow.component";
 import { Contact } from "./components/contact/contact.component";
 import { Divider } from "./components/divider/divider.component";
 import { Footer } from "./components/footer/footer.components";
-import { Header } from "./components/header/header.component";
+import { Hero } from "./components/hero/hero.component";
 import { NavBar } from "./components/navigation/nav.component";
 import { Projects } from "./components/projects/projects.component";
 import { Services } from "./components/services&tech/services&tech.component";
@@ -22,22 +22,22 @@ function App() {
 
   return (
     <ThemeContextProvider>
-      <div className='App'>
+      <div className="App">
         {isLoading ? (
           <Loader />
         ) : (
           <div>
             <NavBar />
-            <Header />
+            <Hero />
             <Arrow />
-            <Divider text='About Me' id='about' />
+            <Divider text="About Me" id="about" />
             <About />
-            <Divider text='Projects' id='projects' />
+            <Divider text="Projects" id="projects" />
             <Projects />
 
-            <Divider text='Services & Tech' id='services' />
+            <Divider text="Services & Tech" id="services" />
             <Services />
-            <Divider text='Get in touch' id='contact' />
+            <Divider text="Get in touch" id="contact" />
             <Contact />
             <Footer />
           </div>
