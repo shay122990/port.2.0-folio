@@ -2,8 +2,8 @@ import "./index.css";
 import { useState, useEffect } from "react";
 import { About } from "./components/about/about.component";
 import { Arrow } from "./components/arrow/arrow.component";
-import { Contact } from "./components/contact/contact.component";
 import { Divider } from "./components/divider/divider.component";
+import { Contact } from "./components/contact/contact.component";
 import { Footer } from "./components/footer/footer.components";
 import { Hero } from "./components/hero/hero.component";
 import { NavBar } from "./components/navigation/nav.component";
@@ -22,23 +22,23 @@ function App() {
 
   return (
     <ThemeContextProvider>
-      <div className="App">
+      <div>
         {isLoading ? (
           <Loader />
         ) : (
-          <div>
+          <div className="components-container">
             <NavBar />
             <Hero />
             <Arrow />
-            <Divider text="About Me" id="about" />
-            <About />
-            <Divider text="Projects" id="projects" />
+            <Divider text="About" id="about" />
+            {/* <About /> */}
+            {/* <Divider text="Projects" id="projects" />
             <Projects />
             <Divider text="Services & Tech" id="services" />
             <Services />
             <Divider text="Get in touch" id="contact" />
             <Contact />
-            <Footer />
+            <Footer /> */}
           </div>
         )}
       </div>

@@ -1,8 +1,10 @@
 .dark_mode {
-  margin-top: -20px;
-  margin-left: 10px;
+  display: flex;
+  align-items: center;
 }
-
+label.dark_mode_label{
+  margin-bottom: 0  ;
+}
 .dark_mode_label {
   width: 65px;
   height: 30px;
@@ -50,17 +52,18 @@
   top: 5px;
   z-index: 100;
 }
+.dark_mode_label .fa-moon,
+.dark_mode_label .fa-sun {
+  color: #fff;
+  transition: 0.3s;
+}
 .dark_mode_label .fa-sun {
   font-size: 20px;
   left: 5px;
-  color: #fff;
-  transition: 0.3s;
 }
 .dark_mode_label .fa-moon {
   font-size: 20px;
   left: 40px;
-  color: #fff;
-  transition: 0.3s;
 }
 .dark_mode_input:checked + .dark_mode_label .fa-sun {
   display: none;

@@ -10,11 +10,11 @@ export const DarkModeToggle = () => {
       <input
         className="dark_mode_input"
         type="checkbox"
-        id="darkmode-toggle"
+        id="dark-mode-toggle"
         onChange={toggleDarkMode}
         checked={darkMode}
       />
-      <label className="dark_mode_label" htmlFor="darkmode-toggle">
+      <label className="dark_mode_label" htmlFor="dark-mode-toggle">
         <i className="fa-solid fa-sun"></i>
         <i className="fa-solid fa-moon"></i>
       </label>

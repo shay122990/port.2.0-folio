@@ -4,14 +4,14 @@
 :root {
   --background-color: #f6f1e9; /* Light mode background color */
   --text-color: #333; /* Light mode text color */
-  --hr-color: #333; /* Light mode hr color */
+  --hr-color: #3333337a; /* Light mode hr color */
   --hover-color: #4fe0c3;
 }
 
 .dark-mode {
   --background-color: #333; /* Dark mode background color */
   --text-color: #fff; /* Dark mode text color */
-  --hr-color: #fff; /* Dark mode hr color */
+  --hr-color: #ffffff5b; /* Dark mode hr color */
 }
 .dark-mode .header-img{
   -webkit-box-shadow: 5px 5px 15px 5px #FF8080, -9px 5px 15px 5px #FFE488, -7px -5px 15px 5px #8CFF85, 12px -5px 15px 5px #80C7FF, 12px 10px 15px 7px #E488FF, -10px 10px 15px 7px #FF616B, -10px -7px 27px 1px #8E5CFF, 5px 5px 0px 50px rgba(0,0,0,0); 
@@ -26,12 +26,14 @@ body {
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  /* overflow-x: hidden; */
+}
+.components-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-hr {
-  border-color: var(--hr-color);
-}
 p {
   letter-spacing: 1px;
 }
