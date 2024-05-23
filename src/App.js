@@ -31,14 +31,14 @@ function App() {
             <Hero />
             <Arrow />
             <Divider text="About" id="about" />
-            {/* <About /> */}
-            {/* <Divider text="Projects" id="projects" />
+            <About />
+            <Divider text="Projects" id="projects" />
             <Projects />
-            <Divider text="Services & Tech" id="services" />
-            <Services />
-            <Divider text="Get in touch" id="contact" />
-            <Contact />
-            <Footer /> */}
+            {/* <Divider text="Services & Tech" id="services" /> */}
+            {/* <Services /> */}
+            {/* <Divider text="Get in touch" id="contact" /> */}
+            {/* <Contact /> */}
+            {/* <Footer /> */}
           </div>
         )}
       </div>

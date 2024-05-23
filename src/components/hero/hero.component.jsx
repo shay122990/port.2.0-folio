@@ -5,9 +5,9 @@ import image from "../../media/header.png";
 export const Hero = () => {
   return (
     <div className="header">
-      <p className="header-text">
-        Hi, I'm Shay... <br />A front end developer in Dubai
-      </p>
+      <h1 className="header-text">
+        Hi, I'm Shay... <br />A web developer in Dubai
+      </h1>
       <img className="header-img" src={image} alt="of-developer" />
     </div>
   );

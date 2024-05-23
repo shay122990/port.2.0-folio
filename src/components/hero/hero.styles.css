@@ -24,7 +24,7 @@
 .header-text {
   color: #fff;
   font-size: 40px;
-  line-height: 50px;
+  line-height: 56px;
 }
 .header-img {
   width: 380px;
@@ -38,7 +38,7 @@
   .header{
     padding: 0 16px;
     margin: 0;
-    height: auto;
+    height: 400px;
   }
   .header-text{
     padding: 0;
@@ -48,18 +48,19 @@
   .header-img{
     margin: 0;
     width: 280px;
+    -webkit-box-shadow: 5px 5px 15px 5px #FF8080, -9px 5px 15px 5px #FFE488, -7px -5px 15px 5px #8CFF85, 12px -5px 15px 5px #80C7FF, 12px 10px 15px 7px #E488FF, -10px 10px 15px 7px #FF616B, -10px -7px 27px 1px #8E5CFF, 0px -50px 49px 10px rgba(0,0,0,0); 
+    box-shadow: 5px 5px 15px 5px #FF8080, -9px 5px 15px 5px #FFE488, -7px -5px 15px 5px #8CFF85, 12px -5px 15px 5px #80C7FF, 12px 10px 15px 7px #E488FF, -10px 10px 15px 7px #FF616B, -10px -7px 27px 1px #8E5CFF, 0px -50px 49px 10px rgba(0,0,0,0);
   }
 }
-@media (max-width: 768px) {
-  .header-img{
-    display: none;
-  }
+@media (max-width:768px){
   .header{
-    margin: 0;
-    height: 250px;
+    height: 220px;
   }
   .header-text{
-    font-size: 26px;
-    width: 80%;
+    font-size: 16px;
+    line-height: 26px;
+  }
+  .header-img{
+    width: 120px;
   }
 }
