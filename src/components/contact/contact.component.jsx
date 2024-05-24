@@ -1,7 +1,6 @@
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
 import "./contact.styles.css";
-import resumePDF from "../../media/resume.pdf";
 
 const SERVICE_ID = process.env.REACT_APP_EMAILJS_SERVICE_ID;
 const TEMPLATE_ID = process.env.REACT_APP_EMAILJS_TEMPLATE_ID;
@@ -53,9 +52,6 @@ export const Contact = () => {
           <br />
           Looking forward to hearing from you. Have a fantastic day!
         </p>
-        <a href={resumePDF} download="resume.pdf" className="resume-button">
-          Download Resume
-        </a>
       </div>
       <div className="form-container">
         <form onSubmit={handleOnSubmit}>

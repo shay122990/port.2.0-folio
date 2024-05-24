@@ -8,7 +8,7 @@ export const Hero = () => {
       <h1 className="header-text">
         Hi, I'm Shay... <br />A web developer in Dubai
       </h1>
-      <img className="header-img" src={image} alt="of-developer" />
+      <img className="header-img" src={image} alt="developer" />
     </div>
   );
 };

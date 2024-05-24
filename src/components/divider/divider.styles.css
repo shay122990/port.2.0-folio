@@ -29,6 +29,10 @@
   .divider-container{
     padding: 0 20px;
   }
+  .divider-container span{
+    font-size: 18px;
+    width: 40%;
+  }
   .divider-container hr{
     width: 70%;
   }
