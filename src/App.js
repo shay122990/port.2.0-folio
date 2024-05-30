@@ -11,6 +11,7 @@ import { Projects } from "./components/projects/projects.component";
 import { Services } from "./components/services&tech/services&tech.component";
 import ThemeContextProvider from "./ThemeContext";
 import Loader from "./components/loader/loader.component";
+import LogoSlider from "./components/banner/logo-slider.component";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -35,6 +36,7 @@ function App() {
             <Divider text="Projects" id="projects" />
             <Projects />
             <Divider text="Services & Tech" id="services" />
+            <LogoSlider />
             <Services />
             <Divider text="Get in touch" id="contact" />
             <Contact />

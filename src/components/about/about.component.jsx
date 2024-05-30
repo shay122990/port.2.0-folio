@@ -15,8 +15,6 @@ export const About = () => {
           foundation to bring your vision to life, where captivating design
           meets flawless functionality, speed, compatibility, and accessibility.
           <br />
-          I am always learning and adapting to new tools and technologies.
-          <br />
           Staying on top of the latest trends in development and design ensures
           I can deliver the best possible results for your company as well as
           personal projects.
