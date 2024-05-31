@@ -3,17 +3,17 @@ import React, { useState, useEffect } from "react";
 import "./carousel.styles.css";
 
 const Carousel = ({ slides }) => {
-  const [index, setIndex] = useState(0);
+  const [slide, setSlide] = useState(0);
   const length = slides.length;
 
   const handlePrevious = () => {
-    const newIndex = index - 1;
-    setIndex(newIndex < 0 ? length - 1 : newIndex);
+    const newIndex = slide - 1;
+    setSlide(newIndex < 0 ? length - 1 : newIndex);
   };
 
   const handleNext = () => {
-    const newIndex = index + 1;
-    setIndex(newIndex >= length ? 0 : newIndex);
+    const newIndex = slide + 1;
+    setSlide(newIndex >= length ? 0 : newIndex);
   };
 
   useEffect(() => {
@@ -21,7 +21,8 @@ const Carousel = ({ slides }) => {
       handleNext();
     }, 5000);
     return () => clearInterval(interval);
-  }, [index]);
+    // eslint-disable-next-line
+  }, [slide]);
 
   return (
     <div className="carousel">
@@ -29,7 +30,7 @@ const Carousel = ({ slides }) => {
         <button className="arrow" onClick={handlePrevious}>
           <i className="fa-solid fa-chevron-left"></i>
         </button>
-        <div className="slide">{slides[index]}</div>
+        <div className="slide">{slides[slide]}</div>
         <button className="arrow" onClick={handleNext}>
           <i className="fa-solid fa-chevron-right"></i>
         </button>
@@ -38,10 +39,10 @@ const Carousel = ({ slides }) => {
         {slides.map((_, i) => (
           <div
             key={i}
-            className={`indicator ${index === i ? "active" : ""}`}
-            onClick={() => setIndex(i)}
+            className={`indicator ${slide === i ? "active" : ""}`}
+            onClick={() => setSlide(i)}
           >
-            <i class="fa-regular fa-circle"></i>{" "}
+            <i className="fa-regular fa-circle"></i>{" "}
           </div>
         ))}
       </div>

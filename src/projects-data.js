@@ -1,4 +1,9 @@
 import image1 from "../src/media/project4.png";
+import image2 from "../src/media/project4.png";
+import image3 from "../src/media/project4.png";
+import image4 from "../src/media/project4.png";
+import image5 from "../src/media/project4.png";
+import image6 from "../src/media/project4.png";
 
 const projects = [
   {
@@ -15,8 +20,7 @@ const projects = [
     description: "React, Javascript, firebase, Tailwind",
     liveUrl: "https://example.com/project-1",
     githubUrl: "https://github.com/username/project-1../..",
-    imageUrl:
-      "https://images.pexels.com/photos/13173088/pexels-photo-13173088.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load",
+    imageUrl: image2,
   },
   {
     id: 3,
@@ -24,8 +28,7 @@ const projects = [
     description: "React, Javascript, firebase, Tailwind",
     liveUrl: "https://example.com/project-1",
     githubUrl: "https://github.com/username/project-1",
-    imageUrl:
-      "https://images.pexels.com/photos/13173088/pexels-photo-13173088.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load",
+    imageUrl: image3,
   },
   {
     id: 4,
@@ -33,8 +36,7 @@ const projects = [
     description: "React, Javascript, firebase, Tailwind",
     liveUrl: "https://example.com/project-1",
     githubUrl: "https://github.com/username/project-1",
-    imageUrl:
-      "https://images.pexels.com/photos/13173088/pexels-photo-13173088.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load",
+    imageUrl: image4,
   },
   {
     id: 5,
@@ -42,8 +44,7 @@ const projects = [
     description: "React, Javascript, firebase, Tailwind",
     liveUrl: "https://example.com/project-1",
     githubUrl: "https://github.com/username/project-1",
-    imageUrl:
-      "https://images.pexels.com/photos/13173088/pexels-photo-13173088.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load",
+    imageUrl: image5,
   },
   {
     id: 6,
@@ -51,8 +52,7 @@ const projects = [
     description: "React, Javascript, firebase, Tailwind",
     liveUrl: "https://example.com/project-1",
     githubUrl: "https://github.com/username/project-1",
-    imageUrl:
-      "https://images.pexels.com/photos/13173088/pexels-photo-13173088.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load",
+    imageUrl: image6,
   },
 
   // Add more projects here

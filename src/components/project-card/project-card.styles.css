@@ -107,8 +107,8 @@
     font-size: 13px;
   }
   .project-links{
-    margin: 0;
-    height: 40px;
+    margin-top: 10px;
+    height: 46px;
   }
   .project-links a{
     font-size: 14px;

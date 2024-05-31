@@ -38,19 +38,15 @@ export const Contact = () => {
   };
 
   return (
-    <div className="container">
+    <div className="contact-container">
       <div className="contact-info">
-        <h2>Get in Touch</h2>
+        <h3>Let's Grab a Coffee! ☕️ </h3>
         <p>
-          Lets get coffee... 😃 <br />
-          I would love to connect and discuss my contribution to your project or
-          organization. <br />
-          If you are a client, let's start by understanding your requirements,
-          and goals. Please fill out the form, and I will get back to you
-          promptly. <br /> And if you're a recruiter, I appreciate your interest
-          in my profile. You can download my resume below.
-          <br />
-          Looking forward to hearing from you. Have a fantastic day!
+          I'm excited about the possibility of collaborating with you on your
+          project or contributing to your organization's success. Let's connect
+          and chat about how I can bring your vision to life. <br /> Please fill
+          out the form below, and I'll be in touch shortly. Looking forward to
+          our conversation!
         </p>
       </div>
       <div className="form-container">
