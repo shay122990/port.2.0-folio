@@ -31,13 +31,14 @@ function App() {
             <NavBar />
             <Hero />
             <Arrow />
+            <LogoSlider />
             <Divider text="About" id="about" />
             <About />
             <Divider text="Projects" id="projects" />
             <Projects />
-            <Divider text="Services & Tech" id="services" />
-            <LogoSlider />
+            <Divider text="Services" id="services" />
             <Services />
+            {/* <LogoSlider /> */}
             <Divider text="Get in touch" id="contact" />
             <Contact />
             <Footer />

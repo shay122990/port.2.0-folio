@@ -52,7 +52,7 @@ button {
     background-color: var(--background-color);
     padding: 20px 20px;
     z-index:1000;
-    border-bottom: lime 1px solid;
+    border-bottom: var(--accent) 1px solid;
   }
   .nav-links {
     display: none;

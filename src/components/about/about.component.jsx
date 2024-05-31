@@ -8,16 +8,17 @@ export const About = () => {
         <p>
           Hi again 👋🏼, I'm Shay..
           <br />
-          I have always been captivated by the intersection of technology and
-          design, which is why I pursued a career in frontend development.
+          I've always been drawn to the magic that happens when technology and
+          design come together. That's what led me to become a frontend
+          developer.
           <br />
-          With a deep understanding of frontend technologies, I possess a strong
-          foundation to bring your vision to life, where captivating design
-          meets flawless functionality, speed, compatibility, and accessibility.
-          <br />
-          Staying on top of the latest trends in development and design ensures
-          I can deliver the best possible results for your company as well as
-          personal projects.
+          With a strong handle on frontend technologies, I'm here to bring your
+          vision to life, blending beautiful design with seamless functionality,
+          speed, compatibility, and accessibility.
+          <br />I love keeping up with the latest trends in development and
+          design so I can always deliver the best for your company and personal
+          projects.
+          <br /> Let's create something amazing together!
         </p>
       </article>
     </section>

@@ -9,7 +9,6 @@
   }
   
 .inner {
-    border: 1px solid lime;
     position: relative;
     width: 100%;
     overflow: hidden;
@@ -36,4 +35,18 @@
       transform: translate(-100%);
     }
   }
-  
+  @media (max-width:1240px) {
+    .logo-img img{
+      height: 40px;
+    }
+  }
+  @media (max-width:768px) {
+    .logo-img img{
+      height: 20px;
+    }
+    .inner{
+      height: 40px;
+      padding:10px 0 0 0;
+      margin: 20px 0; 
+    }
+  }

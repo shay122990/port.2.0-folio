@@ -6,12 +6,19 @@
   --text-color: #333; /* Light mode text color */
   --hr-color: #3333337a; /* Light mode hr color */
   --hover-color: #4fe0c3;
+  --box-shadow-light: 20px 20px 60px #bebebe57, -20px -20px 60px #edebeb9e;
+  --box-shadow: var(--box-shadow-light); /* Default to light mode */
+  --accent: lime;
+  
 }
 
 .dark-mode {
   --background-color: #333; /* Dark mode background color */
   --text-color: #fff; /* Dark mode text color */
   --hr-color: #ffffff5b; /* Dark mode hr color */
+    --box-shadow-dark: 20px 20px 60px #11111176, -20px -20px 60px #44444477;
+  --box-shadow: var(--box-shadow-dark); /* Dark mode box shadow */
+
 }
 .dark-mode .header-img{
   -webkit-box-shadow: 5px 5px 15px 5px #FF8080, -9px 5px 15px 5px #FFE488, -7px -5px 15px 5px #8CFF85, 12px -5px 15px 5px #80C7FF, 12px 10px 15px 7px #E488FF, -10px 10px 15px 7px #FF616B, -10px -7px 27px 1px #8E5CFF, 5px 5px 0px 50px rgba(0,0,0,0); 
