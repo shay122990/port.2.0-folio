@@ -2,9 +2,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 100px;
+  gap: 120px;
   width: 100%;
   padding: 20px;
+  height: 700px;
 }
 .contact-info {
   width: 500px;
@@ -105,6 +106,7 @@ textarea {
 @media (max-width:1240px){
   .contact-container{
     gap: 30px;
+    margin-bottom: 40px;
   }
   .contact-info{
     width: 320px;
