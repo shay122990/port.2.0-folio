@@ -1,6 +1,9 @@
 * {
   box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
 :root {
   --background-color: #f6f1e9; /* Light mode background color */
   --text-color: #333; /* Light mode text color */
