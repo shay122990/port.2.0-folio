@@ -1,4 +1,3 @@
-// Carousel.jsx
 import React, { useState, useEffect } from "react";
 import "./carousel.styles.css";
 
@@ -19,7 +18,7 @@ const Carousel = ({ slides }) => {
   useEffect(() => {
     const interval = setInterval(() => {
       handleNext();
-    }, 5000);
+    }, 8000);
     return () => clearInterval(interval);
     // eslint-disable-next-line
   }, [slide]);
@@ -30,7 +29,10 @@ const Carousel = ({ slides }) => {
         <button className="arrow" onClick={handlePrevious}>
           <i className="fa-solid fa-chevron-left"></i>
         </button>
-        <div className="slide">{slides[slide]}</div>
+        <div className="slide">
+          <img src={slides[slide].image} alt={`Slide ${slides[slide].id}`} />
+          <p>{slides[slide].paragraph}</p>
+        </div>
         <button className="arrow" onClick={handleNext}>
           <i className="fa-solid fa-chevron-right"></i>
         </button>
@@ -42,7 +44,7 @@ const Carousel = ({ slides }) => {
             className={`indicator ${slide === i ? "active" : ""}`}
             onClick={() => setSlide(i)}
           >
-            <i className="fa-regular fa-circle"></i>{" "}
+            <i className="fa-regular fa-circle"></i>
           </div>
         ))}
       </div>

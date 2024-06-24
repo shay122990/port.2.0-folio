@@ -20,7 +20,10 @@ export const Footer = () => {
           <i className="fa-brands fa-linkedin footer-icon"></i>
         </a>
       </span>
-      <p className="footer-text"> © Shay Development 2024</p>
+      <p className="footer-text">
+        {" "}
+        © Shay Development <span>{new Date().getFullYear()}</span>.
+      </p>
       <p className="footer-text">Dubai, UAE</p>
     </div>
   );

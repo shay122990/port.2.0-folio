@@ -1,5 +1,5 @@
 import image1 from "../src/media/project4.png";
-import image2 from "../src/media/project4.png";
+import image2 from "../src/media/img2.jpg";
 import image3 from "../src/media/project4.png";
 import image4 from "../src/media/project4.png";
 import image5 from "../src/media/project4.png";
@@ -16,10 +16,10 @@ const projects = [
   },
   {
     id: 2,
-    name: "crown-clothing-redux",
-    description: "React, Javascript, firebase, Tailwind",
-    liveUrl: "https://example.com/project-1",
-    githubUrl: "https://github.com/username/project-1../..",
+    name: "Space-travel",
+    description: "React, Vite based project",
+    liveUrl: "https://space-tourism-shay90.netlify.app/",
+    githubUrl: "https://github.com/shay122990/space-tourism-website",
     imageUrl: image2,
   },
   {
@@ -54,7 +54,5 @@ const projects = [
     githubUrl: "https://github.com/username/project-1",
     imageUrl: image6,
   },
-
-  // Add more projects here
 ];
 export default projects;

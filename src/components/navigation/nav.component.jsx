@@ -2,7 +2,7 @@ import React, { useContext, useState } from "react";
 import "./nav.styles.css";
 import { DarkModeToggle } from "../dark-mode-toggle/dark-mode-toggle";
 import { ThemeContext } from "../../ThemeContext";
-
+import logo from "../../media/logo.gif";
 export const NavBar = () => {
   const { darkMode } = useContext(ThemeContext);
   const [mobileMenu, setMobileMenu] = useState(false);
@@ -55,6 +55,9 @@ export const NavBar = () => {
           </a>
         </li>
       </ul>
+      <div className="logo-container">
+        <img className="logo" src={logo} alt={logo} />
+      </div>
       <DarkModeToggle />
     </nav>
   );
