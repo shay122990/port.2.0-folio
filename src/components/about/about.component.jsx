@@ -18,7 +18,6 @@ export const About = () => {
           <br />I love keeping up with the latest trends in development and
           design so I can always deliver the best for your company and personal
           projects.
-          <br /> Let's create something amazing together!
         </p>
       </article>
     </section>

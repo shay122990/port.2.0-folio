@@ -1,5 +1,5 @@
 import image1 from "../src/media/project4.png";
-import image2 from "../src/media/img2.jpg";
+import image2 from "../src/media/project2.jpg";
 import image3 from "../src/media/project4.png";
 import image4 from "../src/media/project4.png";
 import image5 from "../src/media/project4.png";

@@ -20,32 +20,37 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding: 0 20px;
+  padding: 0 10px;
 }
+
 .footer span a {
-  padding: 0 28px 0 0;
+  padding: 0 10px 0 0;
   text-decoration: none;
 }
+
 .footer-text {
   color: #fff;
 }
+
 .footer-icon {
-  font-size: 24px;
+  font-size: 20px;
   color: #fff;
 }
+
 .footer-icon:hover {
   color: var(--hover-color);
 }
-@media (max-width: 768px) {
-  .footer{
-    padding: 0 10px;
-    justify-content: space-between;
-    gap: 0;
+
+@media (min-width: 769px) {
+  .footer {
+    padding: 0 20px;
   }
+
   .footer span a {
-    padding: 0 10px 0 0;
+    padding: 0 28px 0 0;
   }
-  .footer-icon{
-    font-size: 20px;
+
+  .footer-icon {
+    font-size: 24px;
   }
 }

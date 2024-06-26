@@ -13,7 +13,7 @@ import ThemeContextProvider from "./ThemeContext";
 import Loader from "./components/loader/loader.component";
 import LogoSlider from "./components/banner/logo-slider.component";
 
-function App() {
+const App = () => {
   const [isLoading, setIsLoading] = useState(true);
   useEffect(() => {
     setTimeout(() => {
@@ -31,14 +31,14 @@ function App() {
             <NavBar />
             <Hero />
             <Arrow />
-            <LogoSlider />
+            {/* <LogoSlider /> */}
             <Divider text="About" id="about" />
             <About />
             <Divider text="Projects" id="projects" />
             <Projects />
             <Divider text="Services" id="services" />
             <Services />
-            {/* <LogoSlider /> */}
+            <LogoSlider />
             <Divider text="Get in touch" id="contact" />
             <Contact />
             <Footer />
@@ -47,6 +47,6 @@ function App() {
       </div>
     </ThemeContextProvider>
   );
-}
+};
 
 export default App;

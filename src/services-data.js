@@ -1,11 +1,11 @@
-import img1 from "./media/about.png";
-import img2 from "./media/about.png";
-import img3 from "./media/about.png";
-import img4 from "./media/about.png";
-import img5 from "./media/about.png";
-import img6 from "./media/about.png";
+import img1 from "./media/tech1.jpg";
+import img2 from "./media/tech2.jpg";
+import img3 from "./media/tech3.jpg";
+import img4 from "./media/tech4.webp";
+import img5 from "./media/tech5.jpg";
+import img6 from "./media/tech6.jpg";
 
-const techBulletins = [
+const servicesData = [
   {
     id: 1,
     paragraph:
@@ -44,4 +44,4 @@ const techBulletins = [
   },
 ];
 
-export default techBulletins;
+export default servicesData;
