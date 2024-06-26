@@ -1,6 +1,6 @@
 import React from "react";
 import "./hero.styles.css";
-import image from "../../media/header.png";
+import image from "../../media/header.jpg";
 
 export const Hero = () => {
   return (
