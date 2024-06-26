@@ -13,7 +13,11 @@ export const NavBar = () => {
 
   return (
     <nav className={`nav ${darkMode ? "dark" : ""}`}>
-      <button className="mobile-menu-icon" onClick={toggleMenu}>
+      <button
+        className="mobile-menu-icon"
+        onClick={toggleMenu}
+        aria-label={mobileMenu ? "Close Menu" : "Open Menu"}
+      >
         <i
           className={`fa-solid ${
             mobileMenu ? "fa-xmark" : "fa-bars"

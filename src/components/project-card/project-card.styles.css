@@ -44,9 +44,9 @@
 .project-info h3{
   margin: 0;
 }
-.project-info p{
+/* .project-info p{
  
-}
+} */
 .project-links {
   display: flex;
   justify-content: space-around;
@@ -54,7 +54,6 @@
   width: 90%;
   height: 50px;
   background-color: var(--hover-color);
-  /* margin-top: 20px; */
   border-radius: 2px;
 }
 

@@ -91,6 +91,10 @@ button {
     color: var(--hover-color);
     font-size: 26px;
   }
+  .nav-links-mobile a:hover {
+    text-decoration: underline var(--hover-color);
+    text-underline-offset: 10px;
+  }
   .fa-xmark {
     position: absolute;
     left: 50%;
