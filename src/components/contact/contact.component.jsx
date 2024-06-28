@@ -1,5 +1,6 @@
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
+import ContactForm from "../form/contact-form.component";
 import "./contact.styles.css";
 
 const SERVICE_ID = process.env.REACT_APP_EMAILJS_SERVICE_ID;
@@ -80,49 +81,11 @@ export const Contact = () => {
         </p>
       </div>
       <div className="form-container">
-        <form onSubmit={handleOnSubmit}>
-          <div>
-            <span id="name-label">Name</span>
-            <input
-              type="text"
-              id="user_name"
-              name="user_name"
-              aria-labelledby="name-label"
-              value={formData.user_name}
-              onChange={handleChange}
-              required
-            />
-          </div>
-
-          <div>
-            <span id="email-label">Email</span>
-            <input
-              type="email"
-              id="user_email"
-              name="user_email"
-              aria-labelledby="email-label"
-              value={formData.user_email}
-              onChange={handleChange}
-              required
-            />
-          </div>
-
-          <div>
-            <span id="message-label">Message</span>
-            <textarea
-              id="message"
-              name="message"
-              aria-labelledby="message-label"
-              value={formData.message}
-              onChange={handleChange}
-              required
-            ></textarea>
-          </div>
-
-          <button value="Send" type="submit" className="submit-button">
-            Submit
-          </button>
-        </form>
+        <ContactForm
+          formData={formData}
+          handleChange={handleChange}
+          handleOnSubmit={handleOnSubmit}
+        />
         {message && <p className="success-message">{message}</p>}
         {error && <p className="error-message">{error}</p>}
       </div>
