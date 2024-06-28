@@ -9,14 +9,37 @@ const PUBLIC_KEY = process.env.REACT_APP_EMAILJS_PUBLIC_KEY;
 export const Contact = () => {
   const [message, setMessage] = useState("");
   const [error, setError] = useState("");
+  const [formData, setFormData] = useState({
+    user_name: "",
+    user_email: "",
+    user_message: "",
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: value,
+    }));
+  };
 
   const handleOnSubmit = (e) => {
     e.preventDefault();
+    if (
+      !formData.user_name.trim() ||
+      !formData.user_email.trim() ||
+      !formData.user_message.trim()
+    ) {
+      setError("All fields are required.");
+      return;
+    }
+
     emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.target, PUBLIC_KEY).then(
       (result) => {
         setMessage(
           "Thank you, message sent successfully! I will get back to you shortly."
         );
+        setError("");
       },
       (error) => {
         setError(
@@ -35,6 +58,11 @@ export const Contact = () => {
       }
     );
     e.target.reset();
+    setFormData({
+      user_name: "",
+      user_email: "",
+      user_message: "",
+    });
   };
 
   return (
@@ -58,6 +86,8 @@ export const Contact = () => {
               id="user_name"
               name="user_name"
               aria-labelledby="name-label"
+              value={formData.user_name}
+              onChange={handleChange}
             />
           </div>
 
@@ -68,6 +98,8 @@ export const Contact = () => {
               id="user_email"
               name="user_email"
               aria-labelledby="email-label"
+              value={formData.user_email}
+              onChange={handleChange}
             />
           </div>
 
@@ -77,6 +109,8 @@ export const Contact = () => {
               id="user_message"
               name="user_message"
               aria-labelledby="message-label"
+              value={formData.user_message}
+              onChange={handleChange}
             ></textarea>
           </div>
 
