@@ -51,13 +51,38 @@ export const Contact = () => {
       </div>
       <div className="form-container">
         <form onSubmit={handleOnSubmit}>
-          <label htmlFor="user_name">Name</label>
-          <input type="text" name="user_name" />
-          <label htmlFor="user_email">Email</label>
-          <input type="email" name="user_email" />
-          <label htmlFor="message">Message</label>
-          <textarea name="message" />
-          <input type="submit" value="Send" className="submit-button" />
+          <div>
+            <span id="name-label">Name</span>
+            <input
+              type="text"
+              id="user_name"
+              name="user_name"
+              aria-labelledby="name-label"
+            />
+          </div>
+
+          <div>
+            <span id="email-label">Email</span>
+            <input
+              type="email"
+              id="user_email"
+              name="user_email"
+              aria-labelledby="email-label"
+            />
+          </div>
+
+          <div>
+            <span id="message-label">Message</span>
+            <textarea
+              id="user_message"
+              name="user_message"
+              aria-labelledby="message-label"
+            ></textarea>
+          </div>
+
+          <button value="Send" type="submit" className="submit-button">
+            Submit
+          </button>
         </form>
         {message && <p className="success-message">{message}</p>}
         {error && <p className="error-message">{error}</p>}

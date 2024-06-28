@@ -26,14 +26,18 @@ const Carousel = ({ slides }) => {
   return (
     <div className="carousel">
       <div className="arrows">
-        <button className="arrow" onClick={handlePrevious}>
+        <button
+          className="arrow"
+          onClick={handlePrevious}
+          aria-label="Previous Slide"
+        >
           <i className="fa-solid fa-chevron-left"></i>
         </button>
         <div className="slide">
           <img src={slides[slide].image} alt={`Slide ${slides[slide].id}`} />
           <p>{slides[slide].paragraph}</p>
         </div>
-        <button className="arrow" onClick={handleNext}>
+        <button className="arrow" onClick={handleNext} aria-label="Next Slide">
           <i className="fa-solid fa-chevron-right"></i>
         </button>
       </div>

@@ -49,7 +49,7 @@ form {
   padding: 20px 0;
 }
 
-label {
+.form-container span {
   color: var(--hover-color);
   font-weight: bold;
   margin-bottom: 10px;
