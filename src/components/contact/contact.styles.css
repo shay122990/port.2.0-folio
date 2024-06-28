@@ -17,9 +17,17 @@
   margin-bottom: 20px;
 }
 
-.contact-info h4 {
-  margin: 0;
-  padding: 0;
+.contact-info span {
+  font-weight: bold;
+}
+.error-icon {
+  padding: 8px 0 0 8px;
+  font-size: 24px;
+  color: #fff;
+}
+
+.error-icon:hover {
+  color: var(--hover-color);
 }
 
 @media (min-width: 768px) {

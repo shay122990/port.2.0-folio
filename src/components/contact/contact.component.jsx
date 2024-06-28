@@ -15,6 +15,10 @@ export const Contact = () => {
     user_email: "",
     message: "",
   });
+  const isEmailValid = (email) => {
+    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return regex.test(email);
+  };
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -35,7 +39,10 @@ export const Contact = () => {
       setError("All fields are required. Please fill out the form completely.");
       return;
     }
-
+    if (!isEmailValid(formData.user_email)) {
+      setError("Please enter a valid email address.");
+      return;
+    }
     emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.target, PUBLIC_KEY).then(
       (result) => {
         setMessage(
@@ -71,13 +78,12 @@ export const Contact = () => {
   return (
     <div className="contact-container">
       <div className="contact-info">
-        <h3>Let's Grab a Coffee! ☕️ </h3>
+        <span>Let's Grab a Coffee! ☕️ </span>
         <p>
           I'm excited about the possibility of collaborating with you on your
           project or contributing to your organization's success. Let's connect
           and chat about how I can bring your vision to life. <br /> Please fill
-          out the form below, and I'll be in touch shortly. Looking forward to
-          our conversation!
+          out the form below, and I'll be in touch shortly.
         </p>
       </div>
       <div className="form-container">
