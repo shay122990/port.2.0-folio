@@ -15,6 +15,7 @@ export const Contact = () => {
     user_email: "",
     message: "",
   });
+
   const isEmailValid = (email) => {
     const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return regex.test(email);
@@ -28,7 +29,7 @@ export const Contact = () => {
     }));
   };
 
-  const handleOnSubmit = (e) => {
+  const handleOnSubmit = async (e) => {
     e.preventDefault();
 
     if (
@@ -37,42 +38,61 @@ export const Contact = () => {
       !formData.message.trim()
     ) {
       setError("All fields are required. Please fill out the form completely.");
+      setErrorMessageTimeout();
       return;
     }
     if (!isEmailValid(formData.user_email)) {
       setError("Please enter a valid email address.");
+      setErrorMessageTimeout();
       return;
     }
-    emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.target, PUBLIC_KEY).then(
-      (result) => {
-        setMessage(
-          "Thank you, message sent successfully! I will get back to you shortly."
-        );
-        setError("");
 
-        setFormData({
-          user_name: "",
-          user_email: "",
-          message: "",
-        });
-        e.target.reset();
-      },
-      (error) => {
-        setError(
-          <>
-            Oops, an error occurred whilst sending the message. <br />
-            Please contact me via LinkedIn{" "}
-            <a
-              href="https://www.linkedin.com/in/shay-asanova90/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <i className="fa-brands fa-linkedin error-icon"></i>
-            </a>
-          </>
-        );
-      }
-    );
+    try {
+      // eslint-disable-next-line no-unused-vars
+      const result = await emailjs.sendForm(
+        SERVICE_ID,
+        TEMPLATE_ID,
+        e.target,
+        PUBLIC_KEY
+      );
+      setMessage(
+        "Thank you, message sent successfully! I will get back to you shortly."
+      );
+      setSuccessMessageTimeout();
+      setFormData({
+        user_name: "",
+        user_email: "",
+        message: "",
+      });
+      e.target.reset();
+    } catch (error) {
+      setError(
+        <>
+          Oops, an error occurred whilst sending the message. <br />
+          Please contact me via LinkedIn{" "}
+          <a
+            href="https://www.linkedin.com/in/shay-asanova90/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <i className="fa-brands fa-linkedin error-icon"></i>
+          </a>
+        </>
+      );
+      setErrorMessageTimeout();
+    }
+  };
+
+  const setErrorMessageTimeout = () => {
+    setTimeout(() => {
+      setError("");
+    }, 4000);
+  };
+
+  const setSuccessMessageTimeout = () => {
+    setTimeout(() => {
+      setMessage("");
+    }, 4000);
   };
 
   return (
