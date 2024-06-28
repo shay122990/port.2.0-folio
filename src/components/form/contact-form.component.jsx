@@ -1,7 +1,7 @@
 import "./contact-form.styles.css";
 const ContactForm = ({ formData, handleChange, handleOnSubmit }) => {
   return (
-    <form onSubmit={handleOnSubmit}>
+    <form onSubmit={handleOnSubmit} className="contact-form">
       <div>
         <span id="name-label">Name</span>
         <input
