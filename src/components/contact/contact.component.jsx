@@ -12,7 +12,7 @@ export const Contact = () => {
   const [formData, setFormData] = useState({
     user_name: "",
     user_email: "",
-    user_message: "",
+    message: "",
   });
 
   const handleChange = (e) => {
@@ -25,12 +25,13 @@ export const Contact = () => {
 
   const handleOnSubmit = (e) => {
     e.preventDefault();
+
     if (
       !formData.user_name.trim() ||
       !formData.user_email.trim() ||
-      !formData.user_message.trim()
+      !formData.message.trim()
     ) {
-      setError("All fields are required.");
+      setError("All fields are required. Please fill out the form completely.");
       return;
     }
 
@@ -40,6 +41,13 @@ export const Contact = () => {
           "Thank you, message sent successfully! I will get back to you shortly."
         );
         setError("");
+
+        setFormData({
+          user_name: "",
+          user_email: "",
+          message: "",
+        });
+        e.target.reset();
       },
       (error) => {
         setError(
@@ -57,12 +65,6 @@ export const Contact = () => {
         );
       }
     );
-    e.target.reset();
-    setFormData({
-      user_name: "",
-      user_email: "",
-      user_message: "",
-    });
   };
 
   return (
@@ -88,6 +90,7 @@ export const Contact = () => {
               aria-labelledby="name-label"
               value={formData.user_name}
               onChange={handleChange}
+              required
             />
           </div>
 
@@ -100,17 +103,19 @@ export const Contact = () => {
               aria-labelledby="email-label"
               value={formData.user_email}
               onChange={handleChange}
+              required
             />
           </div>
 
           <div>
             <span id="message-label">Message</span>
             <textarea
-              id="user_message"
-              name="user_message"
+              id="message"
+              name="message"
               aria-labelledby="message-label"
-              value={formData.user_message}
+              value={formData.message}
               onChange={handleChange}
+              required
             ></textarea>
           </div>
 
