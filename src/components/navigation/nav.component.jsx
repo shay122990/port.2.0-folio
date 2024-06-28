@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import { useContext, useState } from "react";
 import "./nav.styles.css";
 import { DarkModeToggle } from "../dark-mode-toggle/dark-mode-toggle";
 import { ThemeContext } from "../../ThemeContext";
@@ -54,6 +54,7 @@ export const NavBar = () => {
             target="_blank"
             rel="noreferrer"
             onClick={toggleMenu}
+            aria-label="GitHub Profile"
           >
             <i className="fa-brands fa-github nav-icon"></i>
           </a>

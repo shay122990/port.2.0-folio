@@ -8,7 +8,7 @@ const ProjectCard = ({ project }) => {
           <img className="project-img" src={project.imageUrl} alt="project" />
         </div>
         <div className="project-info">
-          <h3>{project.name}</h3>
+          <span>{project.name}</span>
           <p>{project.description}</p>
         </div>
         <div className="project-links">

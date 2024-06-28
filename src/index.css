@@ -19,7 +19,7 @@ html {
   --background-color: #333; /* Dark mode background color */
   --text-color: #fff; /* Dark mode text color */
   --hr-color: #ffffff5b; /* Dark mode hr color */
-    --box-shadow-dark: 20px 20px 60px #11111176, -20px -20px 60px #44444477;
+  --box-shadow-dark: 20px 20px 60px #11111176, -20px -20px 60px #44444477;
   --box-shadow: var(--box-shadow-dark); /* Dark mode box shadow */
 
 }

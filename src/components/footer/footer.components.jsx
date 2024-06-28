@@ -9,6 +9,7 @@ export const Footer = () => {
           href="https://github.com/shay122990"
           target="_blank"
           rel="noreferrer"
+          aria-label="GitHub Profile"
         >
           <i className="fa-brands fa-github footer-icon"></i>
         </a>
@@ -16,6 +17,7 @@ export const Footer = () => {
           href="https://www.linkedin.com/in/shay-asanova90/"
           target="_blank"
           rel="noreferrer"
+          aria-label="LinkedIn Profile"
         >
           <i className="fa-brands fa-linkedin footer-icon"></i>
         </a>
