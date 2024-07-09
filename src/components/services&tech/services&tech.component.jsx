@@ -1,7 +1,7 @@
 import React from "react";
 import Carousel from "../carousel/carousel.component";
 import "./services&tech.styles.css";
-import servicesData from "../../services-data";
+import servicesData from "../../data/services-data";
 
 export const Services = () => {
   return (

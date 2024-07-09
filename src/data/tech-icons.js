@@ -64,6 +64,16 @@ const logos = [
     imageUrl:
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vitejs/vitejs-original.svg",
   },
+  {
+    id: 15,
+    imageUrl:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg",
+  },
+  {
+    id: 16,
+    imageUrl:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg",
+  },
 ];
 
 export default logos;

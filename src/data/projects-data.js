@@ -1,9 +1,9 @@
-import image1 from "../src/media/project4.png";
-import image2 from "../src/media/project2.jpg";
-import image3 from "../src/media/project4.png";
-import image4 from "../src/media/project4.png";
-import image5 from "../src/media/project4.png";
-import image6 from "../src/media/project4.png";
+import image1 from "../media/project2.jpg";
+import image2 from "../media/project2.jpg";
+import image3 from "../media/project2.jpg";
+import image4 from "../media/project2.jpg";
+import image5 from "../media/project2.jpg";
+import image6 from "../media/project2.jpg";
 
 const projects = [
   {

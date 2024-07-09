@@ -1,6 +1,6 @@
 import React from "react";
 import "./logo-slider.styles.css";
-import logos from "../../tech-icons";
+import logos from "../../data/tech-icons";
 
 const speed = 20000;
 
