@@ -5,11 +5,10 @@ export const About = () => {
     <section className="about-container" aria-label="About Shay">
       <article className="about-info">
         <p>
-          Hi again 👋🏼, I'm Shay..
+          Hi again 👋🏼,
           <br />
           I've always been drawn to the magic that happens when technology and
-          design come together. That's what led me to become a frontend
-          developer.
+          design come together. That's what led me to become a developer.
           <br />
           With a strong handle on frontend technologies, I'm here to bring your
           vision to life, blending beautiful design with seamless functionality,

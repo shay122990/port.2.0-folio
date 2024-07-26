@@ -96,8 +96,8 @@ export const Contact = () => {
         <span>Let's Grab a Coffee! ☕️ </span>
         <p>
           I'm excited about the possibility of collaborating with you on your
-          project or contributing to your organization's success. Let's connect
-          and chat about how I can bring your vision to life. <br /> Please fill
+          project and contributing to your organization's success. Let's connect
+          and discuss how I can bring that vision to life. <br /> Please fill
           out the form below, and I'll be in touch shortly.
         </p>
       </div>
