@@ -1,6 +1,6 @@
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
-import ContactForm from "../form/contact-form.component";
+import FormInput from "../form/form-input.component";
 import "./contact.styles.css";
 
 const SERVICE_ID = process.env.REACT_APP_EMAILJS_SERVICE_ID;
@@ -48,13 +48,7 @@ export const Contact = () => {
     }
 
     try {
-      // eslint-disable-next-line no-unused-vars
-      const result = await emailjs.sendForm(
-        SERVICE_ID,
-        TEMPLATE_ID,
-        e.target,
-        PUBLIC_KEY
-      );
+      await emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.target, PUBLIC_KEY);
       setMessage(
         "Thank you, message sent successfully! I will get back to you shortly."
       );
@@ -66,6 +60,7 @@ export const Contact = () => {
       });
       e.target.reset();
     } catch (error) {
+      console.error("Error sending email: ", error);
       setError(
         <>
           Oops, an error occurred whilst sending the message. <br />
@@ -107,7 +102,7 @@ export const Contact = () => {
         </p>
       </div>
       <div className="form-container">
-        <ContactForm
+        <FormInput
           formData={formData}
           handleChange={handleChange}
           handleOnSubmit={handleOnSubmit}

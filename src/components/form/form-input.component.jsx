@@ -1,5 +1,5 @@
-import "./contact-form.styles.css";
-const ContactForm = ({ formData, handleChange, handleOnSubmit }) => {
+import "./form-input.styles.css";
+const FormInput = ({ formData, handleChange, handleOnSubmit }) => {
   return (
     <form onSubmit={handleOnSubmit} className="contact-form">
       <div>
@@ -47,4 +47,4 @@ const ContactForm = ({ formData, handleChange, handleOnSubmit }) => {
   );
 };
 
-export default ContactForm;
+export default FormInput;
