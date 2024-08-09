@@ -39,8 +39,8 @@ export const NavBar = () => {
           </a>
         </li>
         <li>
-          <a href="#tech" onClick={toggleMenu}>
-            Tech Stack
+          <a href="#services" onClick={toggleMenu}>
+            Services
           </a>
         </li>
         <li>
