@@ -1,12 +1,11 @@
 import img1 from "../media/tech1.jpg";
 import img2 from "../media/tech2.jpg";
 import img3 from "../media/tech3.jpg";
-import img4 from "../media/tech4.webp";
 import img5 from "../media/tech5.jpg";
 import img6 from "../media/tech6.jpg";
 
 const servicesData = {
-  webDevelopment: [
+  WebDevelopment: [
     {
       id: 1,
       paragraph:
@@ -22,30 +21,57 @@ const servicesData = {
     {
       id: 3,
       paragraph:
-        "Prioritizing seamless user experiences across various devices and screen sizes",
+        "Proficient in NextJs, enabling the creation of server-side rendering, ensuring faster performance",
       image: img3,
     },
   ],
-  design: [
+  Design: [
     {
-      id: 4,
+      id: 1,
       paragraph:
         "Skilled in optimizing website performance through techniques like code minification, image optimization, and caching",
-      image: img4,
+      image: img2,
+    },
+    {
+      id: 2,
+      paragraph: "Proficient at Figma for design prototype",
+      image: img3,
+    },
+    {
+      id: 3,
+      paragraph:
+        "Expertise in responsive design, ensuring that websites adapt to different screen sizes and devices",
+      image: img3,
+    },
+    {
+      id: 4,
+      paragraph: "Expertise in various css libraries ",
+      image: img5,
     },
   ],
-  tools: [
+  TechTools: [
     {
-      id: 5,
+      id: 1,
       paragraph:
         "Understanding of SEO principles and implementation techniques to optimize websites for search engines. Prioritizing semantic code for best accessibility practices.",
       image: img5,
     },
     {
-      id: 6,
+      id: 2,
       paragraph:
         "Experience with WordPress development, for clients that need a simple and beautiful website within a short time.",
       image: img6,
+    },
+    {
+      id: 3,
+      paragraph:
+        "Prioritizing seamless user experiences across various devices and screen sizes",
+      image: img3,
+    },
+    {
+      id: 4,
+      paragraph: "Proficient in Firebase authentication and data storage",
+      image: img1,
     },
   ],
 };

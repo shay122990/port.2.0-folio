@@ -11,7 +11,6 @@ import { Projects } from "./components/projects/projects.component";
 import { Services } from "./components/services&tech/services&tech.component";
 import ThemeContextProvider from "./ThemeContext";
 import Loader from "./components/loader/loader.component";
-import LogoSlider from "./components/banner/logo-slider.component";
 
 const App = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -31,14 +30,12 @@ const App = () => {
             <NavBar />
             <Hero />
             <Arrow />
-            {/* <LogoSlider /> */}
             <Divider text="About" id="about" />
             <About />
             <Divider text="Projects" id="projects" />
             <Projects />
-            <Divider text="Services" id="services" />
+            <Divider text="Tech Stack & Services" id="tech" />
             <Services />
-            <LogoSlider />
             <Divider text="Get in touch" id="contact" />
             <Contact />
             <Footer />

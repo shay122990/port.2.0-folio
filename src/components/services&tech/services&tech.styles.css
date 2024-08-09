@@ -5,32 +5,106 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 1rem;
+  padding: 0 2rem;
 }
 .tech-tabs {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   flex-direction: row;
-  gap: 24px;
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
+  width: 100%;
+  height: 60px;
+  gap: 8px;
+ 
 }
-.tech-tabs .tab-item{
+.tab-item{
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border: none;
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-  background-color: #97979757;
+  width: 160px;
+  height: 40px;
+  background-color: var(--background-color);
+  border: 1px solid var(--text-color);
   cursor: pointer;
+  font-size: 12px;
+  border-radius: 6;
 }
 .tech-tabs .tab-item:hover {
-  background-color: var(--hover-color);
+  border-color: var(--accent);
 }
 .tech-tabs .tab-item.active {
-  background-color: var(--text-color-one);
+  border-color: var(--accent);
 }
-@media (max-width:768px){
+.tech-content{
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: flex-start;
+  grid-row-gap: 10px;
+  width: 100%;
+}
+.tech-item{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  gap: 1rem;
+}
+.tech-image{
+  height: 100px;
+  border-radius: 4px;
+  box-shadow: var(--box-shadow);
+}
+.tech-item p{
+  font-size: 12px;
+  width: 60%;
+  height: auto;
+}
+@media (min-width:600px){
   .services-tech-container{
-    height: 300px;
+    gap: 2rem;
+  }
+  .tech-tabs{
+    gap: 30px;
+  }
+  .tech-content{
+    grid-template-columns: repeat(2,1fr);
+    justify-items: center;
+    grid-row-gap: 30px;
+    width: 100%;
+  }
+  .tech-item{
+    flex-direction: column;
+    justify-content: center;
+    width: 280px;
+    gap: 0;
+    text-align: start;
+  }
+  .tech-image{
+    height: 180px;
+    width: 100%;
+  }
+  .tech-item p{
+    font-size: 14px;
+    width: 100%;
+  }
+}
+@media (min-width:1240px){
+  .services-tech-container{
+    gap: 3rem;
+  }
+  .tech-tabs{
+    gap: 80px;
+  }
+  .tab-item{
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+  }
+  .tech-content{
+    grid-template-columns: repeat(3,1fr);
   }
 }

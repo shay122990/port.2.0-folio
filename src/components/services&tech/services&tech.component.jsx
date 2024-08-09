@@ -1,17 +1,18 @@
 import { useState } from "react";
 import "./services&tech.styles.css";
-import servicesData from "../../data/services-data";
+import techData from "../../data/tech-stack-data";
 import Tabs from "../tabs-menu/tabs-menu.component";
+import LogoSlider from "../banner/logo-slider.component";
 
 export const Services = () => {
-  const [selectedCategory, setSelectedCategory] = useState("webDevelopment");
+  const [selectedCategory, setSelectedCategory] = useState("WebDevelopment");
 
-  const getDataByCategory = (category) => servicesData[category];
+  const getDataByCategory = (category) => techData[category];
 
   return (
     <div className="services-tech-container">
       <Tabs
-        items={Object.keys(servicesData)}
+        items={Object.keys(techData)}
         selectedItem={selectedCategory}
         onTabChange={setSelectedCategory}
         renderTabLabel={(category) =>
@@ -19,14 +20,15 @@ export const Services = () => {
         }
         className="tech-tabs"
       />
-      <div className="services-content">
+      <div className="tech-content">
         {getDataByCategory(selectedCategory).map((item) => (
-          <div key={item.id} className="service-item">
-            <img src={item.image} alt="" className="service-image" />
+          <div key={item.id} className="tech-item">
+            <img src={item.image} alt="" className="tech-image" />
             <p>{item.paragraph}</p>
           </div>
         ))}
       </div>
+      <LogoSlider />
     </div>
   );
 };
