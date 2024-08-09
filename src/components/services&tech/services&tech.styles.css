@@ -2,8 +2,32 @@
   width: 100%;
   height: auto;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.tech-tabs {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  gap: 24px;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.tech-tabs .tab-item{
+  border: none;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #97979757;
+  cursor: pointer;
+}
+.tech-tabs .tab-item:hover {
+  background-color: var(--hover-color);
+}
+.tech-tabs .tab-item.active {
+  background-color: var(--text-color-one);
 }
 @media (max-width:768px){
   .services-tech-container{
