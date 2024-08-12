@@ -1,4 +1,4 @@
-import image1 from "../media/project2.jpg";
+import image1 from "../media/project1.jpg";
 import image2 from "../media/project2.jpg";
 import image3 from "../media/project2.jpg";
 import image4 from "../media/project2.jpg";
@@ -9,9 +9,9 @@ const projects = [
   {
     id: 1,
     name: "crwn-clothing",
-    description: "React, Javascript, firebase, Redux",
-    liveUrl: "https://master--vermillion-stardust-52b853.netlify.app/checkout",
-    githubUrl: "https://github.com/shay122990/crwn-clothings-v2-reduxtoolkit",
+    description: "React, Firebase, Redux, Stripe, SCSS",
+    liveUrl: "https://crwn-clothing-dxb.netlify.app/",
+    githubUrl: "https://github.com/shay122990/ecom-react-crwn",
     imageUrl: image1,
   },
   {
@@ -33,15 +33,15 @@ const projects = [
   {
     id: 4,
     name: "Shay's Tree",
-    description: "React, Vite, Firebase, Context, Bootstrap",
+    description: "React, Vite, Firebase, Context, Stipe,  Bootstrap",
     liveUrl: "https://example.com/project-1",
     githubUrl: "https://github.com/username/project-1",
     imageUrl: image4,
   },
   {
     id: 5,
-    name: "crown-clothing-redux",
-    description: "React, Javascript, firebase, Tailwind",
+    name: "DEV-THOUGHTS",
+    description: "GraphQl",
     liveUrl: "https://example.com/project-1",
     githubUrl: "https://github.com/username/project-1",
     imageUrl: image5,
