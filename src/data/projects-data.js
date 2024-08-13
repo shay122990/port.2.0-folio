@@ -1,7 +1,7 @@
 import image1 from "../media/project1.jpg";
 import image2 from "../media/project2.jpg";
 import image3 from "../media/project2.jpg";
-import image4 from "../media/project2.jpg";
+import image4 from "../media/project4.jpg";
 import image5 from "../media/project2.jpg";
 import image6 from "../media/project2.jpg";
 
@@ -34,8 +34,8 @@ const projects = [
     id: 4,
     name: "Shay's Tree",
     description: "React, Vite, Firebase, Context, Stipe,  Bootstrap",
-    liveUrl: "https://example.com/project-1",
-    githubUrl: "https://github.com/username/project-1",
+    liveUrl: "https://shays-tree.netlify.app/",
+    githubUrl: "https://github.com/shay122990/shay-tree-plant-shop-react",
     imageUrl: image4,
   },
   {
