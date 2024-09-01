@@ -79,6 +79,9 @@ button {
 .logo {
   height: 5rem;
 }
+.nav-icon:hover{
+  color: lime;
+}
 
 @media (min-width: 768px) {
   .nav {
